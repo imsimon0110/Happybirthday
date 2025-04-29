@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>小猫宝宝生日快乐😽</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff7b8c;
+      margin-top: 30px;
+    }
+
+    .letter {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px auto;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      z-index: 1;
+      position: relative;
+    }
+
+    audio {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .cat {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      opacity: 1;
+      animation: float 10s linear infinite;
+      filter: brightness(0) contrast(1000%);
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) translateX(0);
+      }
+      100% {
+        transform: translateY(-200px) translateX(100vw);
+      }
+    }
+
+    /* 控制猫的数量和飘动位置 */
+    .cat:nth-child(1) {
+      left: 5%;
+      animation-delay: 0s;
+    }
+    .cat:nth-child(2) {
+      left: 15%;
+      animation-delay: 2s;
+    }
+    .cat:nth-child(3) {
+      left: 25%;
+      animation-delay: 1.5s;
+    }
+    .cat:nth-child(4) {
+      left: 35%;
+      animation-delay: 3s;
+    }
+    .cat:nth-child(5) {
+      left: 45%;
+      animation-delay: 2.5s;
+    }
+    .cat:nth-child(6) {
+      left: 55%;
+      animation-delay: 1.2s;
+    }
+    .cat:nth-child(7) {
+      left: 65%;
+      animation-delay: 0.8s;
+    }
+    .cat:nth-child(8) {
+      left: 75%;
+      animation-delay: 2.2s;
+    }
+    .cat:nth-child(9) {
+      left: 85%;
+      animation-delay: 1.8s;
+    }
+    .cat:nth-child(10) {
+      left: 95%;
+      animation-delay: 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <!-- 动画背景 -->
+  <div class="background">
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+  </div>
+
+  <!-- 文字内容 -->
+  <h1>生日快乐哟小宝宝(>^3^<)</h1>
+  
+  <div class="letter">
+    <p>亲爱的小宝宝生日快乐😽请问今年的生日愿望是什么呢(。ì _ í。) 不知不觉我宝怎么就21岁了，听你说暑假就要去实习了也觉得好惆怅，时间怎么过得这么快，感觉一下就从一个还在准备高考的小宝宝变成了一个准备上班的大猫了(;_;) 但是不管是准备高考还是准备上班我们都一直在一起，想到这里就忍不住小人得志地偷笑了(#^.^#)</p>
+    <p>虽然过去的三年里面我们也有吵架，也有闹得双方都不愉快的时候，但最后每次都把话说开重归于好了，从一开始的两个人都总是闹别扭什么都不愿意说到现在会主动解决问题（应该是有的吧！）进步也非常非常的大！很多时候我都不知道应该怎么表达自己的想法，或者说是羞于表达，感觉都是你在一点点引导我包容我。</p>
+    <p>我也知道有时候自己太爱耍性子了，情绪上来的时候什么都不想管，但几乎每次你都会给我找台阶下（虽然有的时候还是太好面子了在那继续装逼╥﹏╥）所以必须感谢这个非常大气的猫了(>^ω^<) 但还是希望以后不会再吵架了，我也会多考虑宝宝的感受不再总是惹你不开心了🥺🥺</p>
+    <p>今年真的是第一次没能给宝宝过生日，不知道宝宝今年的生日会怎么过呢🥺等我放假回来我们一定要再补过一个好吗(^з^) 另外一定要记得看我给你写的信好吗，不要忘记了可爱的just小猫生日蛋糕信封（ ;  ; ）</p>
+    <p>想要解锁更多内容请打开just小猫生日蛋糕信封(>^ω^<)</p>
+  </div>
+
+  <!-- 音乐播放器 -->
+  <audio controls>
+    <source src="Oneday.mp3" type="audio/mp3">
+    你的浏览器不支持音频播放。
+  </audio>
+</body>
+</html>
