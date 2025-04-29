@@ -49,10 +49,11 @@
 
     .cat {
       position: absolute;
-      width: 40px;
+      width: 100px;
       height: auto;
-      opacity: 0.9;
-      animation: float 12s linear infinite;
+      opacity: 1;
+      animation: float 10s linear infinite;
+      filter: brightness(0) contrast(1000%);
     }
 
     @keyframes float {
@@ -63,11 +64,63 @@
         transform: translateY(-200px) translateX(100vw);
       }
     }
+    /* 控制猫的数量和飘动位置 */
+    .cat:nth-child(1) {
+      left: 5%;
+      animation-delay: 0s;
+    }
+    .cat:nth-child(2) {
+      left: 15%;
+      animation-delay: 2s;
+    }
+    .cat:nth-child(3) {
+      left: 25%;
+      animation-delay: 1.5s;
+    }
+    .cat:nth-child(4) {
+      left: 35%;
+      animation-delay: 3s;
+    }
+    .cat:nth-child(5) {
+      left: 45%;
+      animation-delay: 2.5s;
+    }
+    .cat:nth-child(6) {
+      left: 55%;
+      animation-delay: 1.2s;
+    }
+    .cat:nth-child(7) {
+      left: 65%;
+      animation-delay: 0.8s;
+    }
+    .cat:nth-child(8) {
+      left: 75%;
+      animation-delay: 2.2s;
+    }
+    .cat:nth-child(9) {
+      left: 85%;
+      animation-delay: 1.8s;
+    }
+    .cat:nth-child(10) {
+      left: 95%;
+      animation-delay: 0.5s;
+    }
   </style>
 </head>
 <body>
   <!-- 动画背景 -->
-  <div class="background" id="background"></div>
+  <div class="background" id="background">   
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+    <img src="cat.png" class="cat" />
+  </div>
 
   <!-- 文字内容 -->
   <h1>生日快乐哟小宝宝(>^3^<)</h1>
